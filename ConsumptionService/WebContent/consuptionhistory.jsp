@@ -21,37 +21,37 @@ $(document).ready(function(){
 <body >
 	<div style="text-align: center;position:relative;left:250px;top:50px;" class="container">
 		<div class="form">
-			<form>
-				<table>
-					<caption>New Bill</caption>
-					<tr>
-						<td>Month: April</td>
-						<td>Year: 2022</td>
-					</tr>
-					<tr>
-						<td colspan="2">
-							<label for="accNo">Account No:</label>
-							<input type="text" name="accNo">
-						</td>
-					</tr>
-					<tr>
-						<td colspan="2">
-							<label for="noOfUnits">No of Units:</label>
-							<input type="text" name="noOfUnits">
-						</td>
-					</tr>
-					<tr>
-						<td colspan="2">
-							<input type="submit" value="Submit">
-						</td>
-					</tr>
-				</table>
-			</form>
-			
-		</div>
-	<div>
-		<p>Summary</p>
-	</div>
+			<table>
+				<caption>Consumption History</caption>
+				<tr>
+					<td>
+						<label for="accNo">Account No:</label>
+						<input type="text" name="accNo" value="623558">
+					</td>
+					<td>
+						<label for="year">Year:</label>
+						<input type="text" name="year" value="2022">
+					</td>
+					<td>
+						<label for="month">Month:</label>
+						<input type="text" name="month">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<table border="1" style="width: 100%;">
+							<tr>
+								<th>Account No</th>
+								<th>Year</th>
+								<th>Month</th>
+								<th>Units</th>
+								<th>Balance</th>
+							</tr>
+							
+						</table>
+					</td>
+				</tr>
+			</table>
 	</div>
 
 </body>

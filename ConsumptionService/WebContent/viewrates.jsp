@@ -23,35 +23,36 @@ $(document).ready(function(){
 		<div class="form">
 			<form>
 				<table>
-					<caption>New Bill</caption>
+					<caption>Consumption Rates</caption>
 					<tr>
-						<td>Month: April</td>
-						<td>Year: 2022</td>
+						<td>Valid From:</td>
+						<td>03/24/2021</td>
 					</tr>
 					<tr>
-						<td colspan="2">
-							<label for="accNo">Account No:</label>
-							<input type="text" name="accNo">
-						</td>
+						<td>Type:</td>
+						<td>Domestic</td>
 					</tr>
 					<tr>
-						<td colspan="2">
-							<label for="noOfUnits">No of Units:</label>
-							<input type="text" name="noOfUnits">
-						</td>
+						<td>0 - 30 units:</td>
+						<td>Rs 5.21</td>
 					</tr>
 					<tr>
-						<td colspan="2">
-							<input type="submit" value="Submit">
-						</td>
+						<td>30 - 60 units:</td>
+						<td>Rs 14.52</td>
+					</tr>
+					<tr>
+						<td>60 - 90 units:</td>
+						<td>Rs 21.33</td>
+					</tr>
+					<tr>
+						<td>90 - 120 units:</td>
+						<td>Rs 34.12</td>
+					</tr>
+					<tr>
+						<td>Above 120 units:</td>
+						<td>Rs 42.21</td>
 					</tr>
 				</table>
-			</form>
-			
-		</div>
-	<div>
-		<p>Summary</p>
-	</div>
 	</div>
 
 </body>

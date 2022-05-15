@@ -1,11 +1,3 @@
-$(document).ready(function()
-{
-if ($("#alertSuccess").text().trim() == "")
- {
- $("#alertSuccess").hide();
- }
- $("#alertError").hide();
-});
 
 $(document).on("click", "#savebtn", function(event) {
 
@@ -51,7 +43,6 @@ function saveDetails(response, status) {
 	$("#formItem")[0].reset();
 }
 
-
 $(document).on("click", ".btnUpdate", function(event) {
 			$("#consumpId").val( $(this).closest("tr").find('#hidIDUpdate').val());
 			$("#accNo").val($(this).closest("tr").find('td:eq(0)').text());
@@ -59,6 +50,7 @@ $(document).on("click", ".btnUpdate", function(event) {
 			$("#month").val($(this).closest("tr").find('td:eq(3)').text());
 			$("#units").val($(this).closest("tr").find('td:eq(4)').text());
 		});
+
 
 $(document).on("click", ".btnRemove", function(event) {
 	$.ajax({
@@ -109,27 +101,6 @@ if ($("#month").val().trim() == "")
  {
  return "Insert Month";
  }
-if ($("#units").val().trim() == "")
- {
- return "Insert no of Units";
- }
-
-var tmpCNo = $("#accNo").val().trim();
-if (!$.isNumeric(tmpCNo))
- {
- return "Invalid Account Number.";
- }
-var tmpCvv = $("#units").val().trim();
-if (!$.isNumeric(tmpCvv))
- {
- return "invalid no of units.";
- }
-var tmpPNo = $("#paymentNo").val().trim();
-if (!$.isNumeric(tmpPNo))
- {
- return "Invalid ";
- }
- $("#units").val(parseInt(tmpCvv).toFixed(0));
 
 
 return true;
