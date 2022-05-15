@@ -65,6 +65,9 @@
   </ol>
 </details>
 
+## User Interfaces
+<img src="https://datastorm.s3.amazonaws.com/Screenshot+2022-05-15+220318.png" width="290">
+<img src="https://datastorm.s3.amazonaws.com/Screenshot+2022-05-15+220342.png" width="290">
 
 
 <!-- ABOUT THE PROJECT -->
